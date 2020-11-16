@@ -27,3 +27,8 @@ div strong {
 div p {
   margin-left: 8px;
 }
+
+canvas {
+  border: 8px solid green;
+  background-color: green;
+}
