@@ -2,6 +2,8 @@ const canvas = document.getElementById("snake");
 const context = canvas.getContext("2d");
 const box = 32;
 let snake = [];
+let score = 0;
+let scoreboard = document.getElementById('score');
 
 snake[0] = {
   x: 8 * box,
@@ -71,6 +73,8 @@ function startGame() {
   } else {
     food.x = Math.floor(Math.random() * 15 + 1) * box;
     food.y = Math.floor(Math.random() * 15 + 1) * box;
+    score += 10;
+    scoreboard.innerText = score;
   }
 
   let newHead = {

@@ -12,3 +12,18 @@ body {
   flex-direction: column;
   color: green;
 }
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 12px;
+}
+
+div strong {
+  font-size: 14px;
+}
+
+div p {
+  margin-left: 8px;
+}
